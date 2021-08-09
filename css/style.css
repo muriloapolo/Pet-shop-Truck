@@ -43,6 +43,8 @@ body {
   justify-content: space-between;
   text-align: center;
   height: 80px;
+  width: 100%;
+  margin-bottom: 80px;
 }
 
 .barra_menu .logo {
@@ -110,12 +112,8 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   font-family: "Roboto", sans-serif;
-  margin-top: 80px;
-  margin-bottom: 80px;
-  flex-grow: 1;
-
 }
 
 .texto_principal {
@@ -165,12 +163,12 @@ body {
 
 .texto_principal a {
   font-family: "Poppins", sans-serif;
-  font-weight: 999;
+  font-weight: bold;
   color: #fff;
   font-size: 1.4em;
   padding: 10px;
   transition: 0.5s ease-in;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   font-stretch: condensed;
 }
 
@@ -202,8 +200,8 @@ body {
   width: 50%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
+  justify-content: flex-start;
+  text-align: start;
   box-sizing: border-box;
   height: 100%;
 }
@@ -212,7 +210,7 @@ body {
   border-radius: 50%;
   width: 70%;
   opacity: 0.9;
-  border: 2px solid #62b119;
+  border: 5px solid #62b119;
 }
 
 .legenda_foto {
@@ -223,12 +221,10 @@ body {
 
 /*Banner Contato api Whats*/
 .bannerContato {
-  width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  box-sizing: border-box;
-
+  flex-wrap: wrap;
+  width: 100%;
 
 }
 
@@ -236,7 +232,6 @@ body {
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  height: 80vh;
   width: 50%;
   align-content: center;
   justify-content: flex-end;
