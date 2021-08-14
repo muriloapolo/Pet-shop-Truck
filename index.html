@@ -10,7 +10,7 @@
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css\responsividade.css">
+<link rel="stylesheet" href="css\responsividade.css">
 
   <title>Realeza Banho e Tosa</title>
 </head>
@@ -23,8 +23,15 @@
         <div class="logo">
           <a href="#home">Realeza Truck PET</a>
         </div>
-        <div class="menu">
-          <nav>
+  <div class="menu-responsivo" id="toggler">
+          <div class="barras-menu"></div>
+          <div class="barras-menu"></div>
+          <div class="barras-menu"></div>
+        </div>
+   
+        <div class="menu" id="menuToggler">
+
+          <nav id="navegacao_principal">
             <ul>
               <li><a href="#home">Home</a></li>
               <li><a href="#servicos">Serviços</a></li>
@@ -37,96 +44,97 @@
     </header>
 
     <!--Texto principal / imagem principal-->
-    <section id="principal">
-      <div class="banner_central">
-        <div class="texto_principal">
-          <h1>Cuidando com carinho</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
-            cumque atque provident, nulla harum eaque voluptates unde enim
-            earum nesciunt modi maiores voluptas sapiente soluta.
+
+    <section class="banners">
+      <div class="texto_principal espaco">
+        <h1>Cuidando com carinho</h1>
+        <p style="display: block;">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+          cumque atque provident.
+        </p>
+        <button><a href="#servicos">Nossos Serviços</a></button>
+      </div>
+     
+
+      <div class="imagem_promocional espaco">
+      
+          <img class="imagemMarca" src="img/dog3.jpg" alt="Cachorro" />
+    
+        <div class="imagem_legenda">          
+          <p class="legenda_foto">
+            Photo by
+            <a
+              href="https://unsplash.com/@agmakonts?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adam
+              Grabek</a>
+            on
+            <a
+              href="https://unsplash.com/s/photos/dog?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
           </p>
-          <button><a href="#servicos">Nossos Serviços</a></button>
-        </div>
-
-        <div class="imagem_promocional">
-          <div class="imagem_legenda">
-            <img src="img/dog3.jpg" alt="Cachorro" />
-            <p class="legenda_foto">
-              Photo by
-              <a
-                href="https://unsplash.com/@agmakonts?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adam
-                Grabek</a>
-              on
-              <a
-                href="https://unsplash.com/s/photos/dog?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-            </p>
-          </div>
         </div>
       </div>
     </section>
+
     <!--Contato/Whats API-->
-    <section>
-      <div class="bannerContato">
-        <div class="imgContatoWhats">
-          <img src="img/depo/dogCell.png" alt="cachoroo com telefone na patinha icone">
-        </div>
+    <section class="banners">
+      
+      <div class="imagem_promocional espaco">   
+        <h2>Podemos buscar seu PET</h2>     
+        <img class="dogPhone" src="img/depo/dogCell.png" alt="cachoroo com telefone na patinha icone">
+      </div>
 
-        <div class="icoWhats lightSpeedIn">
-          <!--alterar o número e a mensagem ---%20 define espaço-->
-          <a href=" https://api.whatsapp.com/send?phone=5571999999999&text=Olá,%20podemos%20agendar?">
-            <i class="fab fa-whatsapp"></i> <span class="textoWhats">Manda uma mensagem.</span> </a>
-        </div>
+      <div class="icoWhats espaco imagem_promocional">
+        <!--alterar o número e a mensagem ---%20 define espaço-->
+        <a href=" https://api.whatsapp.com/send?phone=5571999999999&text=Olá,%20podemos%20agendar?"><i
+            class="fab fa-whatsapp"></i> <span class="textoWhats">Manda uma mensagem.</span> </a>
       </div>
     </section>
+
+
+
     <!--Depoimentos/avaliações-->
-    <section>
-      <div class="avaliacoes">
-        <div class="card_avaliacoes">
-          <div class="depo_img">
-            <img src="img/depo/profile_generic.png" alt="" />
-          </div>
-          <div class="depoTexto">
-            <span>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Ducimus, eum. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit.
-            </span>
-          </div>
+
+    <section class="avaliacoes">
+      <div class="card_avaliacoes">
+        <div class="depo_img">
+          <img src="img/depo/profile_generic.png" alt="" />
+        </div>
+        <div class="depoTexto">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Ducimus, eum. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit.
+          </p>
         </div>
       </div>
-      <div class="contatos"></div>
     </section>
-
-    <!--rodapé-->
-    <section>
-      <footer>
-        <div class="barraEsquerda">
-          <nav class="navfooter">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Serviço</a></li>
-              <li><a href="#">Sobre</a></li>
-              <li><a href="#">Contato</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="barraMeio">
-          <span>Realeza Banho e Tosa </span> <br />
-          <span> CNPJ: 99.999.999.0000-00 </span> <br />
-          <a href="tel:071999999999">Tel: 071999999999</a>
-        </div>
-        <div class="barraDireita">
-          <a href="#" class="fab fa-facebook-f pulse"></a>
-          <a href="#" class="fab fa-instagram pulse"></a>
-          <a href="#" class="fab fa-pinterest-p pulse"></a>
-        </div>
-      </footer>
-    </section>
-
-
   </div>
   <!--/fim container-->
+
+      <!--rodapé-->
+      <section>
+        <footer>
+          <div class="footerBar barraEsquerda">
+            <nav class="navfooter">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Serviço</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footerBar barraMeio">
+            <span>Realeza Banho e Tosa </span> <br />
+            <span> CNPJ: 99.999.999.0000-00 </span> <br />
+            <a href="tel:071999999999">Tel: 071999999999</a>
+          </div>
+          <div class="footerBar barraDireita">
+            <a href="#" class="fab fa-facebook-f pulse"></a>
+            <a href="#" class="fab fa-instagram pulse"></a>
+            <a href="#" class="fab fa-pinterest-p pulse"></a>
+          </div>
+        </footer>
+      </section>
 </body>
 
 </html>

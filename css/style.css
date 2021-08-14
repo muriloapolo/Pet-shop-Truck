@@ -21,30 +21,15 @@ body {
 
 }
 
-/* textos comuns*/
-
-
-/*container*/
-.container {
-  width: 90%;
-  height: auto;
-  margin: 0 auto;
-  min-width: 360px;
-  max-width: 1600px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
 /*barra de navegação*/
 .barra_menu {
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  align-items: left;
+  justify-content: space-evenly;
   text-align: center;
   height: 80px;
-  width: 100%;
-  margin-bottom: 80px;
+  box-sizing: border-box;
 }
 
 .barra_menu .logo {
@@ -69,7 +54,6 @@ body {
   font-weight: 700;
   width: 60%;
   display: flex;
-  height: auto;
   text-align: center;
   justify-content: flex-end;
   align-items: center;
@@ -93,6 +77,7 @@ body {
 
 
 }
+/*/fim barra navegação*/
 
 .menu a:hover {
   color: #0e0000;
@@ -100,41 +85,53 @@ body {
   border-bottom: 1px solid rgba(155, 34, 34, 0.979);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-
-
 }
 
-/*/fim barra navegação*/
+/* textos comuns*/
 
-/*Caixa texto*/
-.banner_central {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 100vh;
-  font-family: "Roboto", sans-serif;
-}
 
-.texto_principal {
+/*container*/
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;  
+  height: auto;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  width: 50%;
-  align-items: center;
-  text-align: center;
 
+ 
+}
+.banners {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.espaco {
+  width: 50%;
 }
 
 .texto_principal h1 {
-  font-size: 2.8rem;
+  font-size: 2.8em;
   text-align: center;
-  margin: 80px 0;
   text-transform: uppercase;
-  font-family: "Arial", sans-serif;
+  font-family:"Roboto", "Arial", sans-serif;
   color: #fff;
   text-shadow: 1px 3px 3px rgb(52, 59, 2);
-  box-sizing: border-box;
+  transform: translateY(-55px) ;
+  
+}
+.imagem_promocional h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family:"Roboto", "Arial", sans-serif;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 3px 3px rgb(52, 59, 2);
 }
 
 .texto_principal p {
@@ -143,8 +140,7 @@ body {
   font-size: 1rem;
   color: #ccc;
   padding: 10px;
-  margin-bottom: 50px;
-
+  transform: translateY(-55px) ;
 }
 
 .texto_principal button {
@@ -153,7 +149,7 @@ body {
   text-decoration: none;
   border-radius: 30px 80px;
   text-transform: uppercase;
-  padding: 15px;
+  padding: 1rem;
   background-color: rgb(255, 127, 80);
   transition: 0.2s ease-in;
   box-shadow: 1px 1px 25px 5px rgba(80, 18, 18, 0.671);
@@ -196,68 +192,38 @@ body {
 }
 
 /* /fim animação do botão*/
-.imagem_promocional {
-  width: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  text-align: start;
-  box-sizing: border-box;
-  height: 100%;
-}
 
-.imagem_promocional img {
+
+.imagem_promocional {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ 
+}
+.imagem_promocional .imagemMarca{
   border-radius: 50%;
-  width: 70%;
+  width: 80%;
   opacity: 0.9;
   border: 5px solid #62b119;
+}
+.dogPhone{
+  width: 80%;
 }
 
 .legenda_foto {
   color: rgba(204, 204, 204, 0.589);
   font-size: 0.6rem;
+  text-align: center;
   display: none;
 }
 
 /*Banner Contato api Whats*/
-.bannerContato {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
+.icoWhats i {
+  font-size: 15rem;
+  color: #8da332;
 
 }
-
-.imgContatoWhats {
-  display: flex;
-  align-items: center;
-  box-sizing: border-box;
-  width: 50%;
-  align-content: center;
-  justify-content: flex-end;
-
-}
-
-.imgContatoWhats img {
-  display: flex;
-  align-content: flex-end;
-  justify-content: flex-end;
-  width: 80%;
-
-}
-
-.icoWhats {
-
-  height: 90vh;
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  box-sizing: border-box;
-}
-
 .icoWhats a {
   font-family: "Poppins", sans-serif;
   color: #fff;
@@ -268,83 +234,11 @@ body {
 
 }
 
-.icoWhats i {
-  font-size: 10rem;
-  color: #8da332;
-
-}
-
-/*Alterar com JS para interagir apenas 1x quando estiver na área visível*/
-.lightSpeedIn {
-  -webkit-animation-name: lightSpeedIn;
-  animation-name: lightSpeedIn;
-  -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-@-webkit-keyframes lightSpeedIn {
-  0% {
-    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
-    transform: translate3d(100%, 0, 0) skewX(-30deg);
-    opacity: 0;
-  }
-
-  60% {
-    -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);
-    opacity: 1;
-  }
-
-  80% {
-    -webkit-transform: skewX(-5deg);
-    transform: skewX(-5deg);
-    opacity: 1;
-  }
-
-  100% {
-    -webkit-transform: none;
-    transform: none;
-    opacity: 1;
-  }
-}
-
-@keyframes lightSpeedIn {
-  0% {
-    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
-    transform: translate3d(100%, 0, 0) skewX(-30deg);
-    opacity: 0;
-  }
-
-  60% {
-    -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);
-    opacity: 1;
-  }
-
-  80% {
-    -webkit-transform: skewX(-5deg);
-    transform: skewX(-5deg);
-    opacity: 1;
-  }
-
-  100% {
-    -webkit-transform: none;
-    transform: none;
-    opacity: 1;
-  }
-}
-
-
-
 .icoWhats span {
   display: block;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.8rem;
   border-bottom: 15px solid #ccc;
 }
 
@@ -388,7 +282,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
+  width: 100%;
+  height: auto;
   background-color: rgba(219, 212, 212, 0.027);
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
@@ -406,6 +301,11 @@ footer a {
 footer a:hover {
   color: rgb(149, 20, 20);
 }
+.footerBar {
+  width: 300px;
+  text-align: center;
+}
+
 
 /*Menu  footer*/
 .navfooter ul {
@@ -423,27 +323,19 @@ footer a:hover {
 
 
 
-
 /*Detalhes da Empresa*/
-.barraMeio {
-  width: 300px;
-  text-align: center;
-}
 
 .barraMeio span {
   display: inline-block;
-  width: 200px;
   padding: 0;
   font-weight: 200;
   text-transform: uppercase;
-
 
 }
 
 .barraDireita {
   display: flex;
   justify-content: space-between;
-  width: 300px;
   font-size: 2.3em;
 }
 
