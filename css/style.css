@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@200&family=Roboto&display=swap");
+
+/*font-family: 'Fredoka One', cursive; font do logo*/
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: rgb(5, 0, 88);
+  background: linear-gradient(360deg,
+      rgb(5, 0, 88) 8%,
+      rgba(255, 166, 0, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024", endColorstr="#ffa600", GradientType=1);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+}
+
+/*barra de navegação*/
+.barra_menu {
+  display: flex;
+  width: 100%;
+  align-items: left;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 80px;
+  box-sizing: border-box;
+}
+
+.barra_menu .logo {
+  text-align: center;
+  margin: auto 0;
+}
+
+.barra_menu .logo a {
+  font-family: "Fredoka One", cursive;
+  font-size: 2.5rem;
+  color: rgb(236, 211, 187);
+  text-shadow: 1px 5px 5px rgb(69, 70, 141);
+}
+
+.logo a:hover {
+  color: rgb(239, 255, 8);
+  transition: 0.2s ease-in;
+}
+
+.menu {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  width: 60%;
+  display: flex;
+  text-align: center;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu ul {
+  text-decoration: none;
+  display: flex;
+}
+
+.menu ul li {
+  margin-left: 50px;
+}
+
+.menu ul li a {
+  font-size: 20px;
+  color: rgb(83, 138, 57);
+  text-transform: uppercase;
+  padding: 10px;
+  transition: 0.4s ease-in;
+
+
+}
+
+/*/fim barra navegação*/
+
+.menu a:hover {
+  color: #0e0000;
+  transform-origin: 1%;
+  border-bottom: 1px solid rgba(155, 34, 34, 0.979);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* textos comuns*/
+
+
+/*container*/
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+
+}
+
+.banners {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.espaco {
+  width: 50%;
+}
+
+.texto_principal h1 {
+  font-size: 2.8em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #fff;
+  text-shadow: 1px 3px 3px rgb(52, 59, 2);
+  transform: translateY(-55px);
+
+}
+
+.imagem_promocional h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 3px 3px rgb(52, 59, 2);
+}
+
+.texto_principal p {
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  font-size: 1rem;
+  color: #ccc;
+  padding: 10px;
+  transform: translateY(-55px);
+}
+
+.texto_principal button {
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  border-radius: 30px 80px;
+  text-transform: uppercase;
+  padding: 1rem;
+  background-color: rgb(255, 127, 80);
+  transition: 0.2s ease-in;
+  box-shadow: 1px 1px 25px 5px rgba(80, 18, 18, 0.671);
+  box-shadow: 1px 1px 30px 10px rgb(241, 23, 23);
+
+}
+
+.texto_principal a {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.4em;
+  padding: 10px;
+  transition: 0.5s ease-in;
+  letter-spacing: 2px;
+  font-stretch: condensed;
+}
+
+/*animação do botão*/
+.texto_principal button:hover {
+  background: linear-gradient(267deg, #d5aa24, #8da332);
+  background-size: 400% 400%;
+  transition: 0.5s ease-in;
+  transform: scale(1.1);
+  animation: buttonPet 2s ease-in-out infinite;
+}
+
+@keyframes buttonPet {
+  0% {
+    background-position: 0% 51%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 51%;
+  }
+}
+
+/* /fim animação do botão*/
+
+
+.imagem_promocional {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.imagem_promocional .imagemMarca {
+  border-radius: 50%;
+  width: 80%;
+  opacity: 0.9;
+  border: 5px solid #62b119;
+}
+
+.dogPhone {
+  width: 80%;
+}
+
+.legenda_foto {
+  color: rgba(204, 204, 204, 0.589);
+  font-size: 0.6rem;
+  text-align: center;
+  display: none;
+}
+
+/*Banner Contato api Whats*/
+.icoWhats i {
+  font-size: 15rem;
+  color: #8da332;
+
+}
+
+.icoWhats a {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  padding: 30px;
+  font-weight: bold;
+  text-shadow: 1px 5px 3px rgba(6, 54, 144, 0.5);
+  text-align: center;
+
+}
+
+.icoWhats span {
+  display: block;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  border-bottom: 15px solid #ccc;
+}
+
+/*Depoimentos*/
+.avaliacoes {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 100%;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.card_avaliacoes {
+  height: 120px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.depo_img {
+  box-sizing: border-box;
+}
+
+.depo_img img {
+  width: 120px;
+  height: 120px;
+}
+
+.depoTexto {
+  font-family: "Poppins", sans-serif;
+  color: rgb(197, 184, 184);
+}
+
+/*rodape*/
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  background-color: rgba(219, 212, 212, 0.027);
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  color: rgb(219, 211, 211);
+  text-transform: uppercase;
+}
+
+footer a {
+  color: rgb(180, 180, 180);
+  transition: color 0.5s ease-in;
+  font-weight: 600;
+  padding: 10px;
+}
+
+footer a:hover {
+  color: rgb(149, 20, 20);
+}
+
+.footerBar {
+  width: 300px;
+  text-align: center;
+}
+
+
+/*Menu  footer*/
+.navfooter ul {
+  list-style-type: none;
+  display: flex;
+  width: 300px;
+}
+
+.navfooter li {
+  margin: 0 5px;
+  font-size: 0.8em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+
+/*Detalhes da Empresa*/
+
+.barraMeio span {
+  display: inline-block;
+  padding: 0;
+  font-weight: 200;
+  text-transform: uppercase;
+
+}
+
+.barraDireita {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.3em;
+}
+
+.barraDireita a {
+  color: #fff;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.barraDireita a:hover {
+  color: rgb(247, 144, 144);
+  margin-left: 20px;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 1.15, 1.15);
+    transform: scale3d(1.15, 1.15, 1.15);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1.13, 1.13, 1.13);
+    transform: scale3d(1.13, 1.13, 1.13);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 1.15, 1.15);
+    transform: scale3d(1.15, 1.15, 1.15);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1.13, 1.13, 1.13);
+    transform: scale3d(1.13, 1.13, 1.13);
+  }
+}
