@@ -114,10 +114,15 @@ body {
   flex-wrap: wrap;
   box-sizing: border-box;
   justify-content: center;
+  align-items: center;
 }
 
 .espaco {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .texto_principal h1 {
@@ -149,6 +154,7 @@ body {
 }
 
 .texto_principal button {
+  
   cursor: pointer;
   border: none;
   text-decoration: none;
