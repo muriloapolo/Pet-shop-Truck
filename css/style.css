@@ -18,6 +18,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  background-size: 100% 100%;
 
 }
 
@@ -77,6 +78,7 @@ body {
 
 
 }
+
 /*/fim barra navegação*/
 
 .menu a:hover {
@@ -95,14 +97,15 @@ body {
   width: 90%;
   max-width: 1400px;
   margin: 0 auto;
-  box-sizing: border-box;  
+  box-sizing: border-box;
   height: auto;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
 
- 
+
 }
+
 .banners {
   display: flex;
   width: 100%;
@@ -112,6 +115,7 @@ body {
   box-sizing: border-box;
   justify-content: center;
 }
+
 .espaco {
   width: 50%;
 }
@@ -120,16 +124,17 @@ body {
   font-size: 2.8em;
   text-align: center;
   text-transform: uppercase;
-  font-family:"Roboto", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   color: #fff;
   text-shadow: 1px 3px 3px rgb(52, 59, 2);
-  transform: translateY(-55px) ;
-  
+  transform: translateY(-55px);
+
 }
+
 .imagem_promocional h2 {
   font-size: 2rem;
   text-transform: uppercase;
-  font-family:"Roboto", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   color: rgb(255, 255, 255);
   text-shadow: 1px 3px 3px rgb(52, 59, 2);
 }
@@ -140,7 +145,7 @@ body {
   font-size: 1rem;
   color: #ccc;
   padding: 10px;
-  transform: translateY(-55px) ;
+  transform: translateY(-55px);
 }
 
 .texto_principal button {
@@ -199,15 +204,17 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
- 
+
 }
-.imagem_promocional .imagemMarca{
+
+.imagem_promocional .imagemMarca {
   border-radius: 50%;
   width: 80%;
   opacity: 0.9;
   border: 5px solid #62b119;
 }
-.dogPhone{
+
+.dogPhone {
   width: 80%;
 }
 
@@ -224,6 +231,7 @@ body {
   color: #8da332;
 
 }
+
 .icoWhats a {
   font-family: "Poppins", sans-serif;
   color: #fff;
@@ -301,6 +309,7 @@ footer a {
 footer a:hover {
   color: rgb(149, 20, 20);
 }
+
 .footerBar {
   width: 300px;
   text-align: center;
